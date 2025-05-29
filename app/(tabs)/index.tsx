@@ -14,7 +14,7 @@ export default function App() {
   // ボタンが押されたときのハンドラ
   const handleSubmit = () => {
     if (name.trim() === '') {
-      Alert.alert('エラー', '名前を入力してください。');
+      Alert.alert('エラー', 'メールアドレスを入力してください。');
       return;
     }
     setSubmittedName(name);
