@@ -1,7 +1,7 @@
 // App.tsx (または App.js)
 
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, Button, View, Text, SafeAreaView, Alert, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { Alert, Button, KeyboardAvoidingView, Platform, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   // 入力フィールドの値を管理するState
@@ -31,6 +31,11 @@ export default function App() {
       <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={styles.container}>
           <Text style={styles.title}>Spoddy</Text>
+          <Text style={[styles.label, { textAlign: 'center' }]}>
+            一緒にスポーツを楽しむ仲間を見つけよう
+          </Text>
+
+          
 
           {/* 名前入力フィールド */}
           <Text style={styles.label}></Text>
@@ -86,7 +91,11 @@ export default function App() {
             </View>
           ) : null}
 
+          
+        <Text style={styles.link}>アカウントをお持ちの方はこちら</Text>
         </ScrollView>
+       
+          
       </SafeAreaView>
     </KeyboardAvoidingView>
   );
@@ -107,18 +116,34 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#fff',
   },
+  // titleのスタイル
   title: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 30,
-    color: '#333',
+    color: '#DE5656',
   },
+  // labelのスタイル
   label: {
     fontSize: 16,
     marginBottom: 8,
     alignSelf: 'flex-start', // ラベルを左寄せに
-    width: '80%',
+    width: '100%', 
     color: '#555',
+    textAlign: 'center', // 中央寄せ
+  },
+  // linkのスタイル
+  link: {
+    fontSize: 16,
+    color: '#DE5656',
+    marginTop: 20,
+    textDecorationLine: 'underline',
+    textAlign: 'center', // 中央寄せ
+  },
+  jump: {
+    fontSize: 16,
+    color: '#DE5656',
+    textDecorationLine: 'underline',
   },
   input: {
     height: 50,

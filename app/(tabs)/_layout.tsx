@@ -50,8 +50,8 @@ export default function TabLayout() {
         <Tabs.Screen
         name="MyPage"
         options={{
-          title: '募集する',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.fill" color={color} />,
+          title: 'マイページ',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="ant.fill" color={color} />,
         }}
       />
       
