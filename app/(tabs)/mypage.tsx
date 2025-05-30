@@ -5,7 +5,8 @@ const MyPage = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.name}>熊谷 琉ニ</Text>
-            <Text style={styles.bio}>おこ</Text>
+            <Text style={styles.bio}>20歳 東京/新宿</Text>
+            <Text style={styles.bio}>バスケ 🏀</Text>
             <Button title="Edit Profile" onPress={() => alert('Edit Profile')} />
         </View>
     );
@@ -25,9 +26,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     name: {
-        fontSize: 24,
+        fontSize: 40,
         fontWeight: 'bold',
         marginBottom: 10,
+        textAlign: 'left',
     },
     bio: {
         fontSize: 16,
